@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Form & To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Registration Form</div>
+    
+    
+  </nav>
+
+  <main class="grid-container">
+    <section class="container" id="formPage">
+      <h2>Register</h2>
+      <input type="text" id="name" placeholder="Name" />
+      <div class="error" id="nameError"></div>
+      <input type="email" id="email" placeholder="Email" />
+      <div class="error" id="emailError"></div>
+      <input type="text" id="phone" placeholder="Phone Number" />
+      <div class="error" id="phoneError"></div>
+      <input type="password" id="password" placeholder="Password" />
+      <div class="error" id="passwordError"></div>
+      <button onclick="validateForm()">Submit</button>
+    </section>
+
+    <section class="container" id="todoPage">
+      <h2>To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Enter a task" />
+      <button onclick="addTodo()">Add</button>
+      <ul id="todoList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
